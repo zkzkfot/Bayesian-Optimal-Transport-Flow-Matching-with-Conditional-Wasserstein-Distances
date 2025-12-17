@@ -16,6 +16,7 @@ conda env create -f environment.yml
 If this yml file does not work, you can see the requirement.txt file which is original code's setting. In our case, we did experiments with RTX4090.
 
 ## Quick Start
+The main training code is cOT_CIFAR.py file and you can choose different ot_mode (EMD/Random/Sinkhorn). We mainly change the arguments with ot_mode (emd, random, sinkhorn_full), batch_OT(100, 500, 1000, 5000, 10000), sinkhorn_eps(0.1, 0.001, 0.00001), and dir_name.
 
 - Train EMD
 
