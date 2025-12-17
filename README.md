@@ -7,7 +7,8 @@ For question, contact
 zkzkfot@unist.ac.kr or .
 
 ## REQUIREMENTS
-
+To run the code,
+'''conda env create -f environment.yml'''
 
 ## References
 [1] J. Chemseddine, P. Hagemann, C. Wald, G. Steidl.
