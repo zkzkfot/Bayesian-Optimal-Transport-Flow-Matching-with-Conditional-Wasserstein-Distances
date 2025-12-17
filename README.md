@@ -16,20 +16,27 @@ If this yml file does not work, you can see the requirement.txt file which is or
 ## Quick Start
 
 - Train EMD
+
 ```python cOT_CIFAR.py --ot_mode emd --n_epochs 500 --beta 1 --batchOT 500 --dir_name cOT_cifar_emd_bOT500```
 - Train Random
+
 ```python cOT_CIFAR.py --ot_mode random --n_epochs 500 --beta 1 --batchOT 500 --dir_name cOT_cifar_random_beta1_bOT500```
 - Train Sinkhorn
+
 ```python cOT_CIFAR.py --ot_mode sinkhorn_full --sinkhorn_eps 0.001 --sinkhorn_iter 1000 --n_epochs 500 --beta 1 --batchOT 100 --dir_name cOT_cifar_sink_eps0_001_bOT100```
 
 - Evaluate EMD with differenc sampling steps
+
 ```python eval_num_steps.py --model_path cOT_cifar_emd_bOT500/nets1/net_499.pt --num_samples 2000 --steps "2,5,20,50,100,200" --out_dir fid_numsteps_test --tag test_emd```
 - Evaluate Random with differenc sampling steps
+
 ```python eval_num_steps.py --model_path cOT_cifar_random_beta1_bOT500/nets1/net_499.pt --num_samples 2000 --steps "2,5,20,50,100,200" --out_dir fid_numsteps_test --tag test_emd```
 - Evaluate Sinkhorn with differenc sampling steps
+
 ```python eval_num_steps.py --model_path cOT_cifar_sink_eps0_001_bOT100/nets1/net_499.pt --num_samples 2000 --steps "2,5,20,50,100,200" --out_dir fid_numsteps_test --tag test_emd```
 
 - Simulate and calulate OT solving time
+
 ```python measure_ot_time.py --ot_mode emd --beta 1 --batchOT 500 --num_batches 100 --out_dir ot_timing_test --tag emd_bOT500```
 
 ## References
