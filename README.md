@@ -4,7 +4,7 @@ This code is based on the paper **Conditional Wasserstein Distances with Applica
 It contains implementation for the experiments of conditional generation task on CIFAR-10 with different OT solvers such as EMD and Sinkhorn.
 
 For question, contact
-zkzkfot@unist.ac.kr or .
+zkzkfot@unist.ac.kr or seongwon.cho@unist.ac.kr.
 
 ## REQUIREMENTS
 To run the code, you need to make conda environment with :
