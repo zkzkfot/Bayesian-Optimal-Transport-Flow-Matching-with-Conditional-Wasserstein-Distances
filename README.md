@@ -7,8 +7,11 @@ For question, contact
 zkzkfot@unist.ac.kr or .
 
 ## REQUIREMENTS
-To run the code,
-'''conda env create -f environment.yml'''
+To run the code, you need to make conda environment with :
+```conda env create -f environment.yml```
+if this yml file does not work, you can see the requirement.txt file which is original code's setting.
+
+
 
 ## References
 [1] J. Chemseddine, P. Hagemann, C. Wald, G. Steidl.
