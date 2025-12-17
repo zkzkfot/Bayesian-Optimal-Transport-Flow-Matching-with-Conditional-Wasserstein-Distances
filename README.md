@@ -8,7 +8,9 @@ zkzkfot@unist.ac.kr or .
 
 ## REQUIREMENTS
 To run the code, you need to make conda environment with :
+
 ```conda env create -f environment.yml```
+
 if this yml file does not work, you can see the requirement.txt file which is original code's setting.
 
 
